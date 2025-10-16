@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+    *{
+      font-family: 'DM Sans', sans-serif;
+      box-sizing: border-box;
+    }
+    header{
+      max-width: 500px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      height: 100px;
+      overflow: hidden;
+    }
+    header .logo{
+      width: 70px;
+      height: 70px;
+      background: url(../logo.jpg);
+      background-position: center;
+      background-size: contain;
+      border-radius: 100%;
+    }
+    main{
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    ol li a{
+      color: #4e5154;
+      text-decoration: none;
+    }
+    ol li .btnLink{
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      width: max-content;
+      font-size: 16px;
+      border-radius: 5px;
+      color: #777c7e;
+      color: #1b28a5;
+      font-weight: 500;
+    }
+    ol li .btnLink:hover{
+      text-decoration: underline;
+    }
+    header nav{
+      position: fixed;
+      background: #fff;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+      transition: all 600ms ease-in-out;
+    }
+    header nav.hidden{
+      bottom: 0;
+    }
+    header nav h1{
+      font-size: 30px;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="/" class="logo">
+    </a>
+
+    <div class="btnMenu" id="btnMenu">
+      <ion-icon name="menu-outline"></ion-icon>
+    </div>
+    <nav id="menuNav">
+      <h1>Estamos trabajando para darte la mejor experiencia</h1>
+    </nav>
+  </header>
+
+  <main>
+    <ol type="I">
+      <li>
+        <p><b>Evaluacion del servicio de guardería</b></p>
+        <p><b>Objetivo:</b> Conocer la opinión de los padres y madres de familia sobre el servicio que se brinda en la guardería, con el fin de mejorar la atención y el bienestar de los niños.</p>
+        <a class="btnLink" href="evaluacion-guarderia.html">
+          <span>Ir a la evalucion</span>
+          <ion-icon name="link-outline"></ion-icon>
+        </a>
+      </li>
+    </ol>
+  </main>
+
+  <script>
+    const menuNav = document.getElementById('menuNav')
+    const btnMenu = document.getElementById('btnMenu')
+
+    btnMenu.addEventListener("click", ()=>{
+      menuNav.classList.toggle('hidden')
+    })
+  </script>
+</body>
+</html>

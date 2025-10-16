@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	
+	<!--Localfiles-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
+	<!--Scripts-->
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+	<main>
+
+		<section id="evalucion">
+
+			<div class="headerPage">
+
+				<div class="logo">
+				</div>
+
+				<div class="info">
+					<h1>Evaluacion del servicio de guardería!</h1>
+				</div>
+			</div>
+
+			<form id="form">
+
+				<div class="user__data" style="margin-top: 40px;">				
+					<em>
+						<p><b style="color: red;">*</b>
+							Favor de rellenar los siguientes datos:
+						</p>
+					</em>
+					<div class="group">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 icon">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+						</svg>
+						<input class="input" type="name" name="name" placeholder="Nombre Completo">
+					</div>
+					<div class="group">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 icon">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+						</svg>
+						<input class="input" type="email" name="email" placeholder="Correo Electronico">
+					</div>
+					<input type="date" name="date" value="" id="date" hidden>	
+					<script>
+						const hoy = new Date();
+						const fechaFormateada = hoy.toISOString().split('T')[0];
+						document.getElementById('date').value = fechaFormateada;
+					</script>
+				</div>
+
+					
+
+				<ol type="I" class="primaryBox">
+					<em>
+						<p><b style="color: red;">*</b>
+Por favor, marque con una “X” la opción que mejor describa su opinión:</p>
+					</em>
+					<li class="secundaryBox">
+						
+						<span class="title" 
+						>Atencion y cuidado del niño</span>
+
+						<ol type="1">
+							<li class="quest">
+								<div class="lol">
+									<label for="q1" class="questContent">
+										¿Que le parece la atención de la niñera hacia su hijo(a)?
+									</label>
+									<div class="optionQuest">
+										<input type="radio" name="q1" id="optionq1o1" value="Excelente">
+										<label for="optionq1o1">Excelente</label>
+									</div>
+									<div class="optionQuest">
+										<input type="radio" name="q1" id="optionq1o2" value="Buena">
+										<label for="optionq1o2">Buena</label>
+									</div>
+									<div class="optionQuest">
+										<input type="radio" name="q1" id="optionq1o3" value="Regular">
+										<label for="optionq1o3">Regular</label>
+									</div>
+									<div class="optionQuest">
+										<input type="radio" name="q1" id="optionq1o4" value="Mala">
+										<label for="optionq1o4">Mala</label>
+									</div>
+								</div>
+							</li>
+
+							<li class="quest">
+								<label for="q2" class="questContent">
+									¿Que le parece la comunicación que hay entre la encargada, niñeras y padres de familia?
+								</label>
+								<div class="optionQuest">
+									<input type="radio" name="q2" id="optionq2o1" value="Excelente">
+									<label for="optionq2o1">Excelente</label>
+								</div>
+								<div class="optionQuest">
+									<input type="radio" name="q2" id="optionq2o2" value="Buena">
+									<label for="optionq2o2">Buena</label>
+								</div>
+								<div class="optionQuest">
+									<input type="radio" name="q2" id="optionq2o3" value="Regular">
+									<label for="optionq2o3">Regular</label>
+								</div>
+								<div class="optionQuest">
+									<input type="radio" name="q2" id="optionq2o4" value="Mala">
+									<label for="optionq2o4">Mala</label>
+								</div>
+							</li>
+							<li class="quest">
+								<label for="q3" class="questContent">
+									¿Considera suficiente el personal que hay en guardería?
+								</label>
+								<div class="optionQuest">
+									<input type="radio" name="q3" id="optionq3o1" value="Excelente">
+									<label for="optionq3o1">Excelente</label>
+								</div>
+								<div class="optionQuest">
+									<input type="radio" name="q3" id="optionq3o2" value="Buena">
+									<label for="optionq3o2">Buena</label>
+								</div>
+								<div class="optionQuest">
+									<input type="radio" name="q3" id="optionq3o3" value="Regular">
+									<label for="optionq3o3">Regular</label>
+								</div>
+								<div class="optionQuest">
+									<input type="radio" name="q3" id="optionq3o4" value="Mala">
+									<label for="optionq3o4">Mala</label>
+								</div>
+							</li>
+						</ol>
+					</li>
+					<li class="secundaryBox">
+						<span class="title">Alimentación</span>
+						<ol type="1">
+							<li>
+								<div>
+									<label for="q4" class="questContent">
+										¿Que le parece la calidad de los alimentos que recibe su hijo?
+									</label>
+									<div class="optionQuest">
+										<input type="radio" name="q4" id="optionq4o1" value="Excelente">
+										<label for="optionq4o1">Excelente</label>
+									</div>
+									<div class="optionQuest">
+										<input type="radio" name="q4" id="optionq4o2" value="Buena">
+										<label for="optionq4o2">Buena</label>
+									</div>
+									<div class="optionQuest">
+										<input type="radio" name="q4" id="optionq4o3" value="Regular">
+										<label for="optionq4o3">Regular</label>
+									</div>
+									<div class="optionQuest">
+										<input type="radio" name="q4" id="optionq4o4" value="Mala">
+										<label for="optionq4o4">Mala</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="questContent">
+									<label for="q5" class="questContent">¿Le manda lonche a su hijo? ¿Que le manda?</label>
+									<textarea type="text" name="q5text" id="q5" placeholder="Por favor, describa su opinión..." required></textarea>
+								</div>
+							</li>
+							<li>
+								<div>
+									<label for="q6" class="questContent">
+										¿Que le parece la higiene en la preparación de los alimento y del área del comedor?
+									</label>
+									<div class="optionQuest">
+										<input type="radio" name="q6" id="optionq6o1" value="Excelente">
+										<label for="optionq6o1">Excelente</label>
+									</div>
+									<div class="optionQuest">
+										<input type="radio" name="q6" id="optionq6o2" value="Buena">
+										<label for="optionq6o2">Buena</label>
+									</div>
+									<div class="optionQuest">
+										<input type="radio" name="q6" id="optionq6o3" value="Regular">
+										<label for="optionq6o3">Regular</label>
+									</div>
+									<div class="optionQuest">
+										<input type="radio" name="q6" id="optionq6o4" value="Mala">
+										<label for="optionq6o4">Mala</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div>
+									<label for="q7" class="questContent">
+										¿Considera suficiente la cantidad de alimento que le dan a su hijo?
+									</label>
+									<div class="optionQuest">
+										<input type="radio" name="q7" id="optionq7o1" value="Excelente">
+										<label for="optionq7o1">Excelente</label>
+									</div>
+									<div class="optionQuest">
+										<input type="radio" name="q7" id="optionq7o2" value="Buena">
+										<label for="optionq7o2">Buena</label>
+									</div>
+									<div class="optionQuest">
+										<input type="radio" name="q7" id="optionq7o3" value="Regular">
+										<label for="optionq7o3">Regular</label>
+									</div>
+									<div class="optionQuest">
+										<input type="radio" name="q7" id="optionq7o4" value="Mala">
+										<label for="optionq7o4">Mala</label>
+									</div>
+								</div>
+							</li>
+						</ol>
+					</li>
+					<li class="secundaryBox">
+						<span class="title">Instalaciones</span>
+						<ol type="1">
+							<li>
+								<div>
+									<label for="q8" class="questContent">
+										¿Qué opina de la limpieza general de la guardería y de las salas?
+									</label>
+									<div class="optionQuest">
+										<input type="radio" name="q8" id="optionq8o1" value="Excelente">
+										<label for="optionq8o1">Excelente</label>
+									</div>
+									<div class="optionQuest">
+										<input type="radio" name="q8" id="optionq8o2" value="Buena">
+										<label for="optionq8o2">Buena</label>
+									</div>
+									<div class="optionQuest">
+										<input type="radio" name="q8" id="optionq8o3" value="Regular">
+										<label for="optionq8o3">Regular</label>
+									</div>
+									<div class="optionQuest">
+										<input type="radio" name="q8" id="optionq8o4" value="Mala">
+										<label for="optionq8o4">Mala</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div>
+									<label for="q9" class="questContent">
+										¿Que le parece el espacio para juegos con que cuenta la guardería?
+									</label>
+									<div class="optionQuest">
+										<input type="radio" name="q9" id="optionq9o1" value="Excelente">
+										<label for="optionq9o1">Excelente</label>
+									</div>
+									<div class="optionQuest">
+										<input type="radio" name="q9" id="optionq9o2" value="Buena">
+										<label for="optionq9o2">Buena</label>
+									</div>
+									<div class="optionQuest">
+										<input type="radio" name="q9" id="optionq9o3" value="Regular">
+										<label for="optionq9o3">Regular</label>
+									</div>
+									<div class="optionQuest">
+										<input type="radio" name="q9" id="optionq9o4" value="Mala">
+										<label for="optionq9o4">Mala</label>
+									</div>
+								</div>
+							</li>
+						</ol>
+					</li>
+					<li class="secundaryBox">
+						<span class="title">
+							Participación y responsabilidad de los padres
+						</span>
+						<ol>
+							<li>
+								<div class="questContent">
+									<label for="q10" class="questContent">¿Lleva a su hijo(a) aseado(a) y con ropa limpia</label>
+									<textarea type="text" name="q10text" id="q10" placeholder="Por favor, describa su opinión..." required></textarea>
+								</div>
+							</li>
+							<li>
+								<div class="questContent">
+									<label for="q11" class="questContent">¿Entrega los materiales o artículos solicitados</label>
+									<textarea type="text" name="q11text" id="q11" placeholder="Por favor, describa su opinión..." required></textarea>
+								</div>
+							</li>
+							<li>
+								<div class="questContent">
+									<label for="q12" class="questContent">¿Presenta justificante o receta médica cuando su hijo(a) está enfermo	</label>
+									<textarea type="text" name="q12text" id="q12" placeholder="Por favor, describa su opinión..." required></textarea>
+								</div>
+							</li>
+							<li>
+								<div class="questContent">
+									<label for="q13" class="questContent">¿Participa en reuniones o actividades convocadas por la guardería</label>
+									<textarea type="text" name="q13text" id="q13" placeholder="Por favor, describa su opinión..." required></textarea>
+								</div>
+							</li>
+							<li>
+								<div class="questContent">
+									<label for="q14" class="questContent">¿Sigue al pie de la letra las sugerencias que le hace la niñera?</label>
+									<textarea type="text" name="q14text" id="q14" placeholder="Por favor, describa su opinión..." required></textarea>
+								</div>
+							</li>
+							<li>
+								<div class="questContent">
+									<label for="q15" class="questContent">¿Se le ha citado a Oficina de Trabajo Social, por alguna situación con su hijo en guardería?</label>
+									<textarea type="text" name="q15text" id="q15" placeholder="Por favor, describa su opinión..." required></textarea>
+								</div>
+							</li>
+							<li>
+								<div class="questContent">
+									<label for="q16" class="questContent">¿Se le ha suspendido a su hijo, de guardería por problemas de higiene (piojos), mal comportamiento? ¿Qué le parece?</label>
+									<textarea type="text" name="q16text" id="q16" placeholder="Por favor, describa su opinión..." required></textarea>
+								</div>
+							</li>
+						</ol>
+					</li>
+					<li class="secundaryBox">
+						<span class="title">
+							Opinión general
+						</span>
+						<ol>
+							<li>
+								<div class="questContent">
+									<label for="q17" class="questContent">¿Qué le gusta más del servicio de la guardería?</label>
+									<textarea type="text" name="q17text" id="q17" placeholder="Por favor, describa su opinión..." required></textarea>
+								</div>
+							</li>
+							<li>
+								<div class="questContent">
+									<label for="q18" class="questContent">¿Qué considera que se debe mejorar?</label>
+									<textarea type="text" name="q18text" id="q18" placeholder="Por favor, describa su opinión..." required></textarea>
+								</div>
+							</li>
+							<li>
+								<div>
+									<label for="q19" class="questContent">
+										¿Recomendaría el servicio de la guardería a otras familias?
+									</label>
+									<div class="optionQuest">
+										<input type="radio" name="q19" id="optionq19o1" value="Excelente">
+										<label for="optionq19o1">Si</label>
+									</div>
+									<div class="optionQuest">
+										<input type="radio" name="q19" id="optionq19o2" value="Buena">
+										<label for="optionq19o2">No</label>
+									</div>
+									<div class="optionQuest">
+										<input type="radio" name="q19" id="optionq19o3" value="Regular">
+										<label for="optionq19o3">Talvez</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="questContent">
+									<label for="q20" class="questContent">Observaciones adicionales:</label>
+									<textarea type="text" name="q20text" id="q20" placeholder="Por favor, describa su opinión..." required></textarea>
+								</div>
+							</li>
+						</ol>
+					</li>
+					<input type="submit" id="button" class="buttonEnd" value="Finalizar Evaluacion">
+
+				</ol>
+			</form>
+		</section>
+
+		<section id="evaluacionTerminada" class="oculto">
+			<h1>Fin de la evalucion</h1>
+		</section>
+
+		<footer>
+			<hr>
+			<p>Todos los derechos reservado &COPY; 2025</p>
+		</footer>
+	</main>
+
+
+	<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+	<script type="text/javascript">
+		emailjs.init('l03EVKRizVtg-LfmN')
+
+		const btn = document.getElementById('button');
+
+		document.getElementById('form')
+		.addEventListener('submit', function(event) {
+			event.preventDefault();
+
+			btn.value = 'Enviando resultados';
+
+			const serviceID = 'default_service';
+			const templateID = 'template_k67ch1e';
+
+			emailjs.sendForm(serviceID, templateID, this)
+				.then(() => {
+					btn.value = 'Encuenta finalizada con exito. Gracias';
+					alert('Tus respuestas fueron enviadas correctamente... 😊');
+				}, (err) => {
+					btn.value = 'Enviando resultados';
+					alert('Verifica aver llenado todos los campos necesario..')
+					alert(JSON.stringify(err));
+				});
+		});
+	</script>
+</body>
+</html>
